@@ -205,7 +205,7 @@ Users must not:
 
 Users must not submit to unapproved AI services any content that includes, unless explicitly permitted by policy and tool approval conditions:
 
-- Source code from restricted repositories.
+- Source code from internal repositories.
 - Production credentials, secrets, tokens, keys, or certificates.
 - Customer data, personal data, regulated data, or contractual confidential information.
 - Security findings, incident details, or architectural information classified above the approved threshold for the tool.
