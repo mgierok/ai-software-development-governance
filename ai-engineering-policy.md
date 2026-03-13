@@ -29,6 +29,8 @@ This policy applies to all personnel who use AI capabilities in connection with 
 - Interns.
 - Third-party service providers acting on behalf of the company.
 
+For the purposes of this policy, any person within this scope is referred to as a User.
+
 This policy applies to all AI-enabled software development activities, including:
 
 - Product discovery and requirements drafting.
@@ -93,6 +95,10 @@ A governance group responsible for defining approval criteria and making decisio
 Any approval decision issued by the governance group requires acceptance from at least `[Approval Quorum]` members of this group.
 
 The governance group may require an additional opinion from `[Legal Review Function]` or `[Executive Leadership Function]` when it determines that the request has elevated legal, commercial, strategic, or organizational risk.
+
+### 3.8. User
+
+Any employee, contractor, intern, or third-party service provider acting on behalf of the company who uses AI tools, AI agents, or AI-enabled workflows covered by this policy.
 
 ## 4. Governance Principles
 
@@ -226,7 +232,7 @@ Users must not use AI tools to:
 
 ### 7.1. Mandatory Approval Requirement
 
-Employees may use only AI tools and integrations that have been reviewed and approved for the intended use case. Approval must cover both the tool itself and any connected capabilities that materially change its risk profile, including Skills, plugins, APIs, MCP servers, or automation endpoints. An approval is valid only when at least `[Approval Quorum]` members of the governance group have accepted the request. If the governance group determines that additional legal or executive input is required, the approval is not complete until the required opinion has been obtained.
+Users may use only AI tools and integrations that have been reviewed and approved for the intended use case. Approval must cover both the tool itself and any connected capabilities that materially change its risk profile, including Skills, plugins, APIs, MCP servers, or automation endpoints. An approval is valid only when at least `[Approval Quorum]` members of the governance group have accepted the request. If the governance group determines that additional legal or executive input is required, the approval is not complete until the required opinion has been obtained.
 
 ### 7.2. Approval Workflow
 
@@ -351,9 +357,9 @@ AI use in software delivery must align with standard engineering controls at eac
 
 ## 10. Responsibilities
 
-### 10.1. Employees and Individual Contributors
+### 10.1. Users
 
-Employees and contributors who use AI tools for software development must:
+Users must:
 
 - Use only approved tools and approved integration paths.
 - Understand the limitations of the AI capability they are using.
