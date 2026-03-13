@@ -201,7 +201,11 @@ Users must not:
 - Circumvent approved procurement, legal review, vendor review, or security review processes.
 - Route company work through personal AI accounts or unapproved shadow IT services.
 
-### 6.3. No Unauthorized Exposure of Sensitive Data
+### 6.3. No Non-Company Use of Company-Provided Licensed Tools
+
+Users must not use AI tools made available under company-provided licenses for personal, external client, partner, or other non-company purposes. Such tools are permitted only for internal company use.
+
+### 6.4. No Unauthorized Exposure of Sensitive Data
 
 Users must not submit to unapproved AI services any content that includes, unless explicitly permitted by policy and tool approval conditions:
 
@@ -211,7 +215,7 @@ Users must not submit to unapproved AI services any content that includes, unles
 - Security findings, incident details, or architectural information classified above the approved threshold for the tool.
 - Internal documents that contain strategic, legal, financial, or merger-related information.
 
-### 6.4. No Blind Acceptance of AI Outputs
+### 6.5. No Blind Acceptance of AI Outputs
 
 Users must not:
 
@@ -220,7 +224,7 @@ Users must not:
 - Represent AI-generated content as verified engineering fact when it has not been validated.
 - Use AI output to bypass normal review depth, documentation, or evidence expectations.
 
-### 6.5. No Bypass of Security or Compliance Controls
+### 6.6. No Bypass of Security or Compliance Controls
 
 Users must not use AI tools to:
 
