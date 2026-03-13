@@ -83,14 +83,16 @@ A code, configuration, infrastructure, security, or data-related change that cou
 
 ### 3.7. Governance Group
 
-A cross-functional group responsible for defining approval criteria and making decisions about the use of AI tools in software development. The group typically includes representatives from:
+A governance group responsible for defining approval criteria and making decisions about the use of AI tools in software development. The group consists of organization-defined approver roles, such as:
 
-- Security.
-- Platform engineering.
-- Software engineering leadership.
-- Compliance or risk management.
-- Legal or procurement, where applicable.
-- AI governance or technology governance functions.
+- `[Engineering Governance Role]`
+- `[Platform or Architecture Governance Role]`
+- `[Security or Risk Governance Role]`
+- `[Additional Governance Role]`
+
+Any approval decision issued by the governance group requires acceptance from at least `[Approval Quorum]` members of this group.
+
+The governance group may require an additional opinion from `[Legal Review Function]` or `[Executive Leadership Function]` when it determines that the request has elevated legal, commercial, strategic, or organizational risk.
 
 ## 4. Governance Principles
 
@@ -224,25 +226,27 @@ Users must not use AI tools to:
 
 ### 7.1. Mandatory Approval Requirement
 
-Employees may use only AI tools and integrations that have been reviewed and approved for the intended use case. Approval must cover both the tool itself and any connected capabilities that materially change its risk profile, including Skills, plugins, APIs, MCP servers, or automation endpoints.
+Employees may use only AI tools and integrations that have been reviewed and approved for the intended use case. Approval must cover both the tool itself and any connected capabilities that materially change its risk profile, including Skills, plugins, APIs, MCP servers, or automation endpoints. An approval is valid only when at least `[Approval Quorum]` members of the governance group have accepted the request. If the governance group determines that additional legal or executive input is required, the approval is not complete until the required opinion has been obtained.
 
 ### 7.2. Approval Workflow
 
 The standard approval workflow is:
 
 1. A requester submits a tool or integration request describing the intended engineering use case, users, data involved, connected systems, and expected operational benefits.
-2. The governance group or delegated reviewers assess:
+2. The governance group assesses:
    - Security architecture and authentication model.
    - Data handling, retention, residency, and training usage terms.
    - Vendor risk, licensing terms, and legal restrictions.
    - Operational reliability, supportability, and business continuity implications.
    - Potential for prompt injection, privilege escalation, or unsafe autonomous behavior.
-3. The tool is classified as:
+3. The governance group decides whether the request also requires an additional opinion from `[Legal Review Function]` or `[Executive Leadership Function]`.
+4. If an additional opinion is required, that opinion must be obtained and considered before a final approval decision is recorded.
+5. At least `[Approval Quorum]` members of the governance group review the request and record one of the following decisions:
    - Approved.
    - Approved with restrictions.
    - Rejected.
-4. Any approval conditions, such as environment limits or data restrictions, are recorded in the official registry.
-5. Access is provisioned only after the required controls are in place.
+6. Any approval conditions, such as environment limits or data restrictions, are recorded in the official registry.
+7. Access is provisioned only after the required controls are in place.
 
 ### 7.3. Registry Management
 
@@ -379,6 +383,9 @@ Engineering managers and technical leads must:
 
 The governance group must:
 
+- Operate as the approval body defined by the organization for AI tool governance.
+- Ensure that any approval or rejection decision is supported by at least `[Approval Quorum]` members of the group.
+- Decide whether a given request requires an additional opinion from `[Legal Review Function]` or `[Executive Leadership Function]`.
 - Maintain the approval framework and evaluation criteria for AI tools.
 - Review requests for tools, Skills, MCP servers, and related integrations.
 - Maintain the official approved registry and associated usage restrictions.
