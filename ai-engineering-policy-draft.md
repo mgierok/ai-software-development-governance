@@ -79,6 +79,8 @@ A protocol or integration mechanism that enables AI systems to interact with ext
 
 An AI system, agent, model integration, Skill, plugin, connector, or MCP server that has been reviewed and explicitly authorized for use under the `[Organization]` approval process and is listed in the official AI tool decision register with a status of `Approved` or `Approved with restrictions`.
 
+Approval applies only within the scope, environments, data classes, connected systems, and workflow conditions recorded in the official AI tool decision register. Listing in the register does not constitute unrestricted approval for all use cases, execution contexts, or connected capabilities.
+
 ### 3.6. High-Risk Change
 
 A code, configuration, infrastructure, security, or data-related change that could materially affect production availability, confidentiality, integrity, regulatory obligations, customer trust, or financial outcomes if it is incorrect or misused.
@@ -272,6 +274,8 @@ Users must not use AI tools to:
 ### 7.1. Mandatory Approval Requirement
 
 Users may use only AI tools and integrations that have been reviewed and approved for the intended use case under the workflow defined in Section 7.2. Approval must cover both the tool itself and any connected capabilities that materially change its risk profile, including Skills, plugins, APIs, MCP servers, or automation endpoints.
+
+All such use must remain within the restrictions recorded in the official AI tool decision register, including any limits on environments, data classes, repositories, connected systems, user groups, approval steps, or permitted workflows.
 
 ### 7.2. Approval Workflow
 
