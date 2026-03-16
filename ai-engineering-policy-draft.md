@@ -77,7 +77,7 @@ A protocol or integration mechanism that enables AI systems to interact with ext
 
 ### 3.5. Approved AI Tool
 
-An AI system, agent, model integration, Skill, plugin, connector, or MCP server that has been reviewed and explicitly authorized for use under the `[Organization]` approval process and is listed in the official registry of approved AI tools and integrations.
+An AI system, agent, model integration, Skill, plugin, connector, or MCP server that has been reviewed and explicitly authorized for use under the `[Organization]` approval process and is listed in the official AI tool decision register with a status of `Approved` or `Approved with restrictions`.
 
 ### 3.6. High-Risk Change
 
@@ -269,12 +269,12 @@ The standard approval workflow is:
    - Approved.
    - Approved with restrictions.
    - Rejected.
-7. Any approval conditions, such as environment limits or data restrictions, are recorded in the official registry of approved AI tools and integrations.
+7. Any approval conditions, such as environment limits or data restrictions, are recorded in the official AI tool decision register.
 8. Access is provisioned only after the required controls are in place.
 
-### 7.3. Registry Management
+### 7.3. Decision Register Management
 
-The AI Governance Function must maintain the official registry of approved AI tools and integrations. The registry should include, as applicable:
+The AI Governance Function must maintain the official AI tool decision register. The register should include, as applicable:
 
 - Tool or integration name.
 - GitHub link or `N/A` when no public repository is available.
@@ -283,7 +283,7 @@ The AI Governance Function must maintain the official registry of approved AI to
 - Restrictions.
 - Rationale.
 
-The registry may be maintained as a separate operational appendix to this policy, such as [`ai-governance-approved-tools-appendix.md`](./ai-governance-approved-tools-appendix.md), provided that the appendix remains governed under this policy framework.
+The decision register may be maintained as a separate operational appendix to this policy, such as [`ai-governance-approved-tools-appendix.md`](./ai-governance-approved-tools-appendix.md), provided that the appendix remains governed under this policy framework.
 
 ### 7.4. Revalidation and Retirement
 
@@ -408,7 +408,7 @@ The AI Governance Function must:
 
 - Operate as the approval body defined by `[Organization]` for AI tool governance.
 - Execute and maintain the approval and onboarding process defined in Section 7.
-- Maintain the approval framework, evaluation criteria, official registry of approved AI tools and integrations, and associated usage restrictions.
+- Maintain the approval framework, evaluation criteria, official AI tool decision register, and associated usage restrictions.
 - Periodically reassess approved tools based on evolving risk, legal, and security considerations.
 - Advise on secure use patterns, threat scenarios, and required controls.
 - Monitor for misuse, anomalous behavior, or policy violations where monitoring is in scope.
