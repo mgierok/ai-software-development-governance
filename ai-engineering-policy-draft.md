@@ -312,7 +312,7 @@ The standard approval workflow is:
 The AI Governance Function must maintain the official AI tool decision register. The register should include, as applicable:
 
 - Tool or integration name.
-- GitHub link or `N/A` when no public repository is available.
+- Source location or `N/A` when no public source location is available.
 - Tool description.
 - Decision.
 - Restrictions.
