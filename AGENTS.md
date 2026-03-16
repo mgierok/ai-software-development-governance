@@ -38,3 +38,5 @@
 - All content written or updated under this workflow must be in English.
 - These instructions define how agents must create, revise, and maintain governance-style Markdown documentation in this repository.
 - This workflow applies only to governance-style Markdown content in this repository.
+- Repository content must remain generic and reusable, without binding guidance, examples, or policies to any specific company or individual.
+- When a document requires an organization, team, owner, approver, or similar concrete actor, agents must use clear placeholders that downstream adopters can replace for their own environment.
