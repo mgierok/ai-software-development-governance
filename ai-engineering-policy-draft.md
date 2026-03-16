@@ -216,7 +216,7 @@ Approved AI tools may be used to assist with:
 
 Operational use must remain subject to existing change management, production access, segregation of duties, and incident management controls.
 
-AI-assisted operational workflows may prepare or recommend production changes, but execution of any state-changing production action must remain under the Human-in-the-Loop controls defined in Sections 8 and 9.
+AI-assisted operational workflows may prepare or recommend production changes, but execution of any state-changing production action must remain under the authorized human approval controls defined in Sections 8 and 9.
 
 The control gates for AI-assisted operational changes and production execution are defined in Section 9.5.
 
@@ -361,7 +361,7 @@ Approved AI usage must meet the following baseline control requirements regardle
 - Connected data sources, tool descriptors, prompts, retrieved artefacts, and other external inputs must be validated before they can alter agent goals, memory, or action selection.
 - External side effects must be explicitly bounded to approved systems, operations, and authorization paths.
 - Agents must not automatically execute destructive, high-impact, cross-system, or externally routed tool actions without policy checks and, where required, human approval.
-- Human-in-the-Loop workflows are mandatory for any state-changing production action.
+- Authorized human approval workflows are mandatory for any state-changing production action.
 - For state-changing production actions, the workflow must require an authorized human to review the intended target, proposed change, and expected effect and to issue the approval that permits execution.
 
 ### 8.4. Output Validation and Secure Coding Expectations
@@ -383,7 +383,7 @@ Approved AI usage must meet the following baseline control requirements regardle
 - Sensitive workflows must run in controlled environments with restricted connectivity and monitored access.
 - AI-assisted automation must respect existing branch protections, CI controls, deployment approvals, and production change windows.
 - Sensitive agentic workflows must use sandboxed execution, constrained egress, approved registries, pinned dependencies, and emergency revocation capability for compromised tools, prompts, or connectors unless equivalent controls are explicitly approved for the use case.
-- Direct production actions by AI agents are prohibited unless an approved narrowly defined use case includes an authorized Human-in-the-Loop approval step, compensating controls, and auditable traceability.
+- Direct production actions by AI agents are prohibited unless an approved narrowly defined use case includes an authorized human approval step, compensating controls, and auditable traceability.
 
 ## 9. Lifecycle Control Gates for AI-Assisted Delivery
 
