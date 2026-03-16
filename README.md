@@ -8,6 +8,7 @@ This repository stores governance-style Markdown artifacts for AI-assisted softw
 
 - `ai-engineering-policy-draft.md`: The current policy source document.
 - `ai-engineering-policy-acknowledgement-template.md`: The template used to prepare a revision-specific acknowledgement register.
+- `ai-governance-approved-tools-appendix.md`: The appendix used to maintain the AI tool decision register under the policy framework.
 
 ## 3. Organization Policy Onboarding Procedure
 
