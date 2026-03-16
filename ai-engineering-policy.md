@@ -59,20 +59,7 @@ If an AI tool is used on `[Organization]` devices, `[Organization]` repositories
 
 ## 3. Definitions
 
-The following placeholders identify organization-specific actors or structures that downstream adopters must replace for their own environment:
-
-- `[Organization]`: the adopting organization.
-- `[AI Governance Function]`: the function, committee, or delegated authority responsible for AI tool governance and approval decisions.
-- `[Engineering Team Function]`: the engineering team or equivalent delivery function responsible for repository-level implementation practices.
-- `[Engineering Management Role]`: the management role accountable for engineering team oversight.
-- `[Technical Leadership Role]`: the technical leadership role accountable for architecture, quality, or delivery decisions.
-- `[Engineering Governance Role]`: a governance participant representing engineering control expectations in the approval process.
-- `[Platform or Architecture Governance Role]`: a governance participant representing platform, architecture, or infrastructure concerns in the approval process.
-- `[Security or Risk Governance Role]`: a governance participant representing security, privacy, compliance, or risk concerns in the approval process.
-- `[Additional Governance Role]`: any additional governance participant required by the adopting organization.
-- `[Legal Review Function]`: the legal review function that must provide input when tool usage raises contractual, licensing, or regulatory concerns.
-- `[Executive Leadership Function]`: the executive authority that must provide input when a tool request requires senior business approval.
-- `[Approval Quorum]`: the minimum number of authorized approval participants required to record a valid decision.
+Square-bracketed text in this policy identifies organization-specific values that downstream adopters must replace for their own environment. Such placeholders are defined in this section only when they establish a recurring policy term used throughout the document.
 
 ### 3.1. AI Agent
 
@@ -98,11 +85,31 @@ An AI system, agent, model integration, Skill, plugin, connector, or MCP server 
 
 A code, configuration, infrastructure, security, or data-related change that could materially affect production availability, confidentiality, integrity, regulatory obligations, customer trust, or financial outcomes if it is incorrect or misused.
 
-### 3.7. [AI Governance Function]
+### 3.7. AI Governance Function
 
-The organization-defined function, committee, or delegated authority that reviews and decides whether AI tools, integrations, and related capabilities may be used under this policy.
+The AI Governance Function is the organization-defined function, committee, or delegated authority that reviews and decides whether AI tools, integrations, and related capabilities may be used under this policy.
 
-### 3.8. User
+For the adopting organization, this function is assigned to `[AI Governance Function]`. It may include designated representatives from `[Engineering Governance Role]`, `[Platform or Architecture Governance Role]`, `[Security or Risk Governance Role]`, and `[Additional Governance Role]`.
+
+### 3.8. Engineering Team Function
+
+The Engineering Team Function is the organization-defined engineering team or equivalent delivery function responsible for repository-level implementation practices under this policy.
+
+For the adopting organization, this function is assigned to `[Engineering Team Function]`.
+
+### 3.9. Engineering Management Role
+
+The Engineering Management Role is the organization-defined management role accountable for engineering team oversight under this policy.
+
+For the adopting organization, this role is assigned to `[Engineering Management Role]`.
+
+### 3.10. Technical Leadership Role
+
+The Technical Leadership Role is the organization-defined technical leadership role accountable for architecture, quality, or delivery decisions under this policy.
+
+For the adopting organization, this role is assigned to `[Technical Leadership Role]`.
+
+### 3.11. User
 
 Any employee, contractor, intern, or third-party service provider acting on behalf of `[Organization]` who uses AI tools, AI agents, or AI-enabled workflows covered by this policy.
 
@@ -251,20 +258,16 @@ Users may use only AI tools and integrations that have been reviewed and approve
 The standard approval workflow is:
 
 1. A requester submits a tool or integration request describing the intended engineering use case, users, data involved, connected systems, and expected operational benefits.
-2. The `[AI Governance Function]` operates as the approval body for this workflow and may include organization-defined approver roles such as:
-   - `[Engineering Governance Role]`
-   - `[Platform or Architecture Governance Role]`
-   - `[Security or Risk Governance Role]`
-   - `[Additional Governance Role]`
-3. The `[AI Governance Function]` assesses:
+2. The AI Governance Function operates as the approval body for this workflow.
+3. The AI Governance Function assesses:
    - Security architecture and authentication model.
    - Data handling, retention, residency, and training usage terms.
    - Vendor risk, licensing terms, and legal restrictions.
    - Operational reliability, supportability, and business continuity implications.
    - Potential for prompt injection, privilege escalation, or unsafe autonomous behavior.
-4. The `[AI Governance Function]` decides whether the request also requires an additional opinion from `[Legal Review Function]` or `[Executive Leadership Function]`.
+4. The AI Governance Function decides whether the request also requires an additional opinion from `[Legal Review Function]` or `[Executive Leadership Function]`.
 5. If an additional opinion is required, that opinion must be obtained and considered before a final approval decision is recorded.
-6. At least `[Approval Quorum]` members of the `[AI Governance Function]` review the request and record one of the following decisions:
+6. At least `[Approval Quorum]` members of the AI Governance Function review the request and record one of the following decisions:
    - Approved.
    - Approved with restrictions.
    - Rejected.
@@ -273,7 +276,7 @@ The standard approval workflow is:
 
 ### 7.3. Registry Management
 
-The `[AI Governance Function]` must maintain a current registry of approved AI tools and integrations. The registry should include, as applicable:
+The AI Governance Function must maintain a current registry of approved AI tools and integrations. The registry should include, as applicable:
 
 - Tool or integration name.
 - Approved use cases.
@@ -385,26 +388,26 @@ Users must:
 - Report suspicious, unsafe, or unexpected AI behavior.
 - Escalate when a task appears to exceed the approved use boundaries of a tool.
 
-### 10.2. [Engineering Team Function]
+### 10.2. Engineering Team Function
 
-The `[Engineering Team Function]` must:
+The Engineering Team Function must:
 
 - Define practical team-level guidance for approved AI use in their repositories and workflows.
 - Maintain code review, testing, and release discipline for AI-assisted changes.
 - Implement guardrails that restrict unapproved integrations and unsafe automation paths.
 - Monitor recurring quality or security issues associated with AI usage and address them.
 
-### 10.3. [Engineering Management Role] and [Technical Leadership Role]
+### 10.3. Engineering Management Role and Technical Leadership Role
 
-The `[Engineering Management Role]` and `[Technical Leadership Role]` must:
+The Engineering Management Role and Technical Leadership Role must:
 
 - Ensure team members understand this policy and the approved tooling model.
 - Decide when additional review, pair validation, or specialist approval is needed for higher-risk AI-assisted work.
 - Balance productivity goals against engineering quality and operational risk.
 
-### 10.4. [AI Governance Function]
+### 10.4. AI Governance Function
 
-The `[AI Governance Function]` must:
+The AI Governance Function must:
 
 - Operate as the approval body defined by `[Organization]` for AI tool governance.
 - Execute and maintain the approval and onboarding process defined in Section 7.
