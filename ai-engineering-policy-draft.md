@@ -111,6 +111,22 @@ Under this policy, this role is assigned to `[Technical Leadership Role]`.
 
 Any employee, contractor, intern, or third-party service provider acting on behalf of `[Organization]` who uses AI tools, AI agents, or AI-enabled workflows covered by this policy.
 
+### 3.12. Accountable Engineering Decision
+
+A decision that selects, approves, authorizes, or rejects an engineering outcome on behalf of `[Organization]` where responsibility, escalation duties, compliance obligations, or formal governance consequences attach to that choice. Accountable engineering decisions include release approvals, security exceptions, architecture approvals, required code review approvals, production data access approvals, and incident severity classifications that determine formal response obligations.
+
+An accountable engineering decision is not the same as executing a previously approved step. If a workflow has already been approved by the required human authority, later execution of that workflow may still create external side effects, but it does not transfer the underlying decision authority to the AI system.
+
+### 3.13. External Side Effect
+
+An action performed by an AI tool or AI agent that creates, modifies, deletes, transmits, grants, revokes, deploys, reconfigures, or otherwise changes state outside the current analytical exchange. External side effects include writing files, updating tickets, sending messages, calling APIs that change records, changing permissions, modifying infrastructure, or executing deployment steps.
+
+An external side effect may occur without an accountable engineering decision if the action is merely carrying out a bounded and already authorized instruction. However, any such action remains subject to approval boundaries, access controls, and change controls under this policy.
+
+### 3.14. State-Changing Production Action
+
+Any external side effect that creates, modifies, deletes, deploys, restarts, scales, reconfigures, grants access in, or otherwise changes the behavior or data state of a production environment, production service, or production dataset. Read-only inspection, monitoring, and analysis do not by themselves constitute state-changing production actions.
+
 ## 4. Governance Principles
 
 1. Human accountability remains mandatory.
@@ -190,11 +206,15 @@ Approved AI tools may be used to assist with:
 
 Operational use must remain subject to existing change management, production access, segregation of duties, and incident management controls.
 
+AI-assisted operational workflows may prepare or recommend production changes, but execution of any state-changing production action must remain under the Human-in-the-Loop controls defined in Sections 8 and 9.
+
 ## 6. Restricted and Prohibited Use
 
 The following restrictions apply even when an AI tool is otherwise approved.
 
 ### 6.1. No Unsupervised Delegation of Accountable Engineering Decisions
+
+Users must distinguish between accountable engineering decisions and external side effects. An accountable engineering decision is the human-governed choice or approval described in Section 3.12. An external side effect is the execution activity described in Section 3.13. A workflow may involve both, but users must not delegate the accountable engineering decision to AI.
 
 Users must not allow AI agents to make final decisions on behalf of `[Organization]` for:
 
@@ -319,7 +339,9 @@ Approved AI usage must meet the following baseline control requirements regardle
 - Users must consider prompt injection and malicious content risks when providing external content, logs, web results, or repository material to AI agents.
 - AI agents must not be granted broad tool execution rights without guardrails, approval boundaries, and monitoring.
 - Tool invocation paths must be constrained to intended systems and approved operations.
-- Autonomous actions with external side effects must require explicit policy-aligned authorization.
+- External side effects must be explicitly bounded to approved systems, operations, and authorization paths.
+- Human-in-the-Loop workflows are mandatory for any state-changing production action.
+- For state-changing production actions, the workflow must require an authorized human to review the intended target, proposed change, and expected effect and to issue the approval that permits execution.
 
 ### 8.4. Output Validation and Secure Coding Expectations
 
@@ -338,7 +360,7 @@ Approved AI usage must meet the following baseline control requirements regardle
 
 - Sensitive workflows should run in controlled environments with restricted connectivity and monitored access.
 - AI-assisted automation must respect existing branch protections, CI controls, deployment approvals, and production change windows.
-- Direct production actions by AI agents are prohibited unless explicitly approved for a narrowly defined use case with compensating controls.
+- Direct production actions by AI agents are prohibited unless an approved narrowly defined use case includes an authorized Human-in-the-Loop approval step, compensating controls, and auditable traceability.
 
 ## 9. Lifecycle Control Gates for AI-Assisted Delivery
 
@@ -369,6 +391,7 @@ This section defines the mandatory stage-specific control gates for AI-assisted 
 ### 9.5. Deployment and Post-Deployment Controls
 
 - AI-assisted releases must follow existing release management and deployment controls.
+- Any state-changing production action prepared, recommended, or initiated through an AI-assisted workflow must require an authorized human approval step before execution.
 - Teams must retain clear rollback plans and ownership for changes materially influenced by AI output.
 - Post-deployment issues linked to AI-assisted work must be documented and fed back into tool usage guidance, approval conditions, or team practices.
 
