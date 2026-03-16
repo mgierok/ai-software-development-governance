@@ -129,6 +129,8 @@ Any employee, contractor, intern, or third-party service provider acting on beha
 
 AI tools may be used to support software development when the use is consistent with this policy, the tool is approved, and required human review is applied.
 
+This section defines the categories of development work for which AI assistance is permitted. The mandatory control gates that apply before AI-assisted outputs are accepted, merged, deployed, or otherwise relied on are defined in Section 9.
+
 ### 5.1. Planning, Analysis, and Design Support
 
 Approved AI tools may be used to:
@@ -333,33 +335,33 @@ Approved AI usage must meet the following control requirements.
 - AI-assisted automation must respect existing branch protections, CI controls, deployment approvals, and production change windows.
 - Direct production actions by AI agents are prohibited unless explicitly approved for a narrowly defined use case with compensating controls.
 
-## 9. Software Delivery Process Requirements
+## 9. Lifecycle Control Gates for AI-Assisted Delivery
 
-AI use in software delivery must align with standard engineering controls at each lifecycle stage.
+This section defines the mandatory control gates for AI-assisted outputs produced during the lifecycle activities described in Section 5. These controls determine when such outputs may be accepted, merged, deployed, or otherwise relied on.
 
-### 9.1. Requirements and Design Stage
+### 9.1. Requirements and Design Controls
 
 - AI-generated requirements, user stories, and design proposals must be reviewed by accountable product and engineering stakeholders.
 - Teams must confirm that non-functional requirements, security expectations, and compliance obligations are not omitted because of AI summarization or simplification.
 
-### 9.2. Implementation Stage
+### 9.2. Implementation Controls
 
 - Developers may use AI to accelerate implementation, but they remain responsible for understanding the submitted code.
 - Code authors must be able to explain the logic, dependencies, and risks of AI-assisted changes they propose for merge.
 - Large or high-risk AI-assisted changes should be broken into reviewable units where practical.
 
-### 9.3. Testing and Validation Stage
+### 9.3. Testing and Validation Controls
 
 - AI-assisted changes must pass the tests, checks, and quality gates appropriate to the repository and change type.
 - Additional validation is required when the AI-generated output affects authentication, authorization, cryptography, payments, personal data handling, infrastructure, or production safety.
 
-### 9.4. Review and Approval Stage
+### 9.4. Review and Approval Controls
 
 - Human reviewers must review AI-assisted changes according to the same or stricter standards as other changes.
 - Reviewers should challenge unclear logic, unverifiable claims, weak tests, unexplained dependencies, and suspicious code patterns regardless of whether the author used AI assistance.
 - Required approvals must come from authorized humans, not from an AI-generated recommendation alone.
 
-### 9.5. Deployment and Post-Deployment Stage
+### 9.5. Deployment and Post-Deployment Controls
 
 - AI-assisted releases must follow existing release management and deployment controls.
 - Teams must retain clear rollback plans and ownership for changes materially influenced by AI output.
