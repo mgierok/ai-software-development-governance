@@ -298,7 +298,7 @@ Approval may be suspended or revoked if the tool no longer meets `[Organization]
 
 ## 8. Security and Engineering Control Requirements
 
-Approved AI usage must meet the following control requirements.
+Approved AI usage must meet the following baseline control requirements regardless of lifecycle stage. These controls complement, and do not replace, the stage-specific acceptance, review, merge, and deployment gates defined in Section 9.
 
 ### 8.1. Identity, Authentication, and Access Control
 
@@ -323,7 +323,7 @@ Approved AI usage must meet the following control requirements.
 
 ### 8.4. Output Validation and Secure Coding Expectations
 
-- AI-generated code must undergo the same secure coding, review, and testing expectations as human-authored code.
+- AI-generated code must be treated as untrusted input until it has been technically validated under the applicable lifecycle gates defined in Section 9.
 - Engineers must verify that generated code does not introduce known insecure patterns, hidden functionality, unsupported dependencies, or licensing conflicts.
 - AI-generated infrastructure or configuration changes must be reviewed for operational safety, rollback feasibility, and blast radius.
 - Security-sensitive changes may require additional review from security or platform specialists.
@@ -342,7 +342,7 @@ Approved AI usage must meet the following control requirements.
 
 ## 9. Lifecycle Control Gates for AI-Assisted Delivery
 
-This section defines the mandatory control gates for AI-assisted outputs produced during the lifecycle activities described in Section 5. These controls determine when such outputs may be accepted, merged, deployed, or otherwise relied on.
+This section defines the mandatory stage-specific control gates for AI-assisted outputs produced during the lifecycle activities described in Section 5. Section 8 defines the baseline controls that apply to all approved AI use; this section determines when specific outputs may be accepted, merged, deployed, or otherwise relied on.
 
 ### 9.1. Requirements and Design Controls
 
