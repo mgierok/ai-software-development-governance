@@ -42,3 +42,5 @@
 - This workflow applies only to governance-style Markdown content in this repository.
 - Repository content must remain generic and reusable, without binding guidance, examples, or policies to any specific company or individual.
 - When a document requires an organization, team, owner, approver, or similar concrete actor, agents must use clear placeholders that downstream adopters can replace for their own environment.
+- Policy-facing documents must be written for engineering readers, using language that assumes baseline familiarity with standard software delivery practices.
+- Agents must not define routine engineering concepts unless a term has a specific policy, governance, approval, or control meaning that would otherwise be ambiguous.
