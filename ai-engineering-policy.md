@@ -100,14 +100,7 @@ A code, configuration, infrastructure, security, or data-related change that cou
 
 ### 3.7. [AI Governance Function]
 
-The `[AI Governance Function]` is responsible for defining approval criteria and making decisions about the use of AI tools in software development. This function consists of organization-defined approver roles, such as:
-
-- `[Engineering Governance Role]`
-- `[Platform or Architecture Governance Role]`
-- `[Security or Risk Governance Role]`
-- `[Additional Governance Role]`
-
-The approval workflow, quorum requirements, and escalation points for the `[AI Governance Function]` are defined in Section 7.
+The organization-defined function, committee, or delegated authority that reviews and decides whether AI tools, integrations, and related capabilities may be used under this policy.
 
 ### 3.8. User
 
@@ -258,20 +251,25 @@ Users may use only AI tools and integrations that have been reviewed and approve
 The standard approval workflow is:
 
 1. A requester submits a tool or integration request describing the intended engineering use case, users, data involved, connected systems, and expected operational benefits.
-2. The `[AI Governance Function]` assesses:
+2. The `[AI Governance Function]` operates as the approval body for this workflow and may include organization-defined approver roles such as:
+   - `[Engineering Governance Role]`
+   - `[Platform or Architecture Governance Role]`
+   - `[Security or Risk Governance Role]`
+   - `[Additional Governance Role]`
+3. The `[AI Governance Function]` assesses:
    - Security architecture and authentication model.
    - Data handling, retention, residency, and training usage terms.
    - Vendor risk, licensing terms, and legal restrictions.
    - Operational reliability, supportability, and business continuity implications.
    - Potential for prompt injection, privilege escalation, or unsafe autonomous behavior.
-3. The `[AI Governance Function]` decides whether the request also requires an additional opinion from `[Legal Review Function]` or `[Executive Leadership Function]`.
-4. If an additional opinion is required, that opinion must be obtained and considered before a final approval decision is recorded.
-5. At least `[Approval Quorum]` members of the `[AI Governance Function]` review the request and record one of the following decisions:
+4. The `[AI Governance Function]` decides whether the request also requires an additional opinion from `[Legal Review Function]` or `[Executive Leadership Function]`.
+5. If an additional opinion is required, that opinion must be obtained and considered before a final approval decision is recorded.
+6. At least `[Approval Quorum]` members of the `[AI Governance Function]` review the request and record one of the following decisions:
    - Approved.
    - Approved with restrictions.
    - Rejected.
-6. Any approval conditions, such as environment limits or data restrictions, are recorded in the official registry.
-7. Access is provisioned only after the required controls are in place.
+7. Any approval conditions, such as environment limits or data restrictions, are recorded in the official registry.
+8. Access is provisioned only after the required controls are in place.
 
 ### 7.3. Registry Management
 
