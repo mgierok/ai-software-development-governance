@@ -132,7 +132,7 @@ Any external side effect that creates, modifies, deletes, deploys, restarts, sca
 ## 4. Governance Principles
 
 1. Human accountability remains mandatory.
-   AI may assist with engineering work, but responsibility for design decisions, code quality, security posture, approvals, and production outcomes remains with authorized human personnel.
+   AI may assist with engineering work, but responsibility for design decisions, code quality, security posture, approvals, and production outcomes remains with authorized human personnel. AI tools may inform decisions, but they must not replace required human approvals in architecture review, security review, change management, or release governance.
 2. Default-deny for unapproved external capabilities.
    External AI-connected tools, public MCP servers, public Skills, and third-party connectors must not be used unless they have been approved.
 3. Risk-based use is required.
@@ -145,8 +145,6 @@ Any external side effect that creates, modifies, deletes, deploys, restarts, sca
    Significant AI-assisted work must remain attributable to a responsible user and recoverable through standard engineering records such as tickets, commits, reviews, logs, and change histories.
 7. Security and compliance requirements remain mandatory.
    AI-assisted work must comply with the security, privacy, legal, regulatory, and contractual controls that apply to any other engineering activity.
-8. AI is a support capability, not an approval authority.
-   AI tools may inform decisions, but they must not replace required human approvals in architecture review, security review, change management, or release governance.
 
 ## 5. Permitted Use in the Software Development Lifecycle
 
