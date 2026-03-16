@@ -330,7 +330,7 @@ Approved AI usage must meet the following baseline control requirements regardle
 
 ### 8.1. Identity, Authentication, and Access Control
 
-- Enterprise authentication or equivalent controlled identity must be used wherever available.
+- Enterprise authentication or an organization-approved controlled identity must be used for engineering AI activity.
 - Shared anonymous accounts must not be used for engineering AI activity.
 - Access to repositories, environments, and tools must remain role-based and least-privilege.
 - Agent permissions must be scoped to the minimum set required for the assigned task.
