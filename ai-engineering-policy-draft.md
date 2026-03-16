@@ -277,14 +277,11 @@ The standard approval workflow is:
 The AI Governance Function must maintain the official registry of approved AI tools and integrations. The registry should include, as applicable:
 
 - Tool or integration name.
-- Approved use cases.
-- Approved user groups or teams.
-- Permitted data classes.
-- Connected systems and permissions granted.
-- Risk classification.
-- Required monitoring or logging controls.
-- Usage restrictions or prohibitions.
-- Approval owner and review date.
+- GitHub link or `N/A` when no public repository is available.
+- Tool description.
+- Decision.
+- Restrictions.
+- Rationale.
 
 The registry may be maintained as a separate operational appendix to this policy, such as [`ai-governance-approved-tools-appendix.md`](./ai-governance-approved-tools-appendix.md), provided that the appendix remains governed under this policy framework.
 
