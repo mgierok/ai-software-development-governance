@@ -79,7 +79,7 @@ A protocol or integration mechanism that enables AI systems to interact with ext
 
 ### 3.5. Approved AI Tool
 
-An AI system, agent, model integration, Skill, plugin, connector, or MCP server that has been reviewed and explicitly authorized for use under the `[Organization]` approval process and is listed in the official registry of approved capabilities.
+An AI system, agent, model integration, Skill, plugin, connector, or MCP server that has been reviewed and explicitly authorized for use under the `[Organization]` approval process and is listed in the official registry of approved AI tools and integrations.
 
 ### 3.6. High-Risk Change
 
@@ -271,12 +271,12 @@ The standard approval workflow is:
    - Approved.
    - Approved with restrictions.
    - Rejected.
-7. Any approval conditions, such as environment limits or data restrictions, are recorded in the official registry.
+7. Any approval conditions, such as environment limits or data restrictions, are recorded in the official registry of approved AI tools and integrations.
 8. Access is provisioned only after the required controls are in place.
 
 ### 7.3. Registry Management
 
-The AI Governance Function must maintain a current registry of approved AI tools and integrations. The registry should include, as applicable:
+The AI Governance Function must maintain the official registry of approved AI tools and integrations. The registry should include, as applicable:
 
 - Tool or integration name.
 - Approved use cases.
@@ -411,7 +411,7 @@ The AI Governance Function must:
 
 - Operate as the approval body defined by `[Organization]` for AI tool governance.
 - Execute and maintain the approval and onboarding process defined in Section 7.
-- Maintain the approval framework, evaluation criteria, official approved registry, and associated usage restrictions.
+- Maintain the approval framework, evaluation criteria, official registry of approved AI tools and integrations, and associated usage restrictions.
 - Periodically reassess approved tools based on evolving risk, legal, and security considerations.
 - Advise on secure use patterns, threat scenarios, and required controls.
 - Monitor for misuse, anomalous behavior, or policy violations where monitoring is in scope.
