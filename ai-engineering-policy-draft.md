@@ -174,7 +174,7 @@ Approved AI tools may be used to:
 - Explain unfamiliar code, logs, configuration, or framework behavior to accelerate engineering work.
 - Assist in translating logic between languages, frameworks, or internal system conventions.
 
-AI-generated code must be treated as untrusted until reviewed. Engineers must confirm correctness, maintainability, security, licensing implications, and consistency with internal coding standards.
+AI-generated code must be treated as untrusted until reviewed. Users must confirm correctness, maintainability, security, licensing implications, and consistency with internal coding standards.
 
 Where an AI agent generates, refactors, or migrates code with limited direct human authorship, the workflow must still assign a responsible human for review, merge, and deployment decisions as required by this policy.
 
@@ -367,7 +367,7 @@ Approved AI usage must meet the following baseline control requirements regardle
 ### 8.4. Output Validation and Secure Coding Expectations
 
 - AI-generated code must be treated as untrusted input until it has been technically validated under the applicable lifecycle gates defined in Section 9.
-- Engineers must verify that generated code does not introduce known insecure patterns, hidden functionality, unsupported dependencies, or licensing conflicts.
+- Users must verify that generated code does not introduce known insecure patterns, hidden functionality, unsupported dependencies, or licensing conflicts.
 - AI-generated infrastructure or configuration changes must be reviewed for operational safety, rollback feasibility, and blast radius.
 - Security-sensitive changes may require additional review from security or platform specialists.
 
@@ -376,7 +376,7 @@ Approved AI usage must meet the following baseline control requirements regardle
 - Material AI-assisted actions must be logged or otherwise recoverable through normal engineering records.
 - Logs must capture the responsible user, tool used, action taken, target system, and relevant data classification for the workflow records maintained under this policy.
 - Monitoring must detect unexpected goal changes, anomalous tool-chaining patterns, suspicious memory writes, repeated retrieval of low-trust context, and evidence of dependency or configuration drift.
-- Teams must preserve sufficient evidence to support incident investigation, audit, and retrospective review.
+- The Engineering Team Function must preserve sufficient evidence to support incident investigation, audit, and retrospective review.
 
 ### 8.6. Environment Isolation and Change Control
 
@@ -391,12 +391,12 @@ This section defines the mandatory stage-specific control gates for AI-assisted 
 
 ### 9.1. Requirements and Design Controls
 
-- AI-generated requirements, user stories, and design proposals must be reviewed by accountable product and engineering stakeholders.
-- Teams must confirm that non-functional requirements, security expectations, and compliance obligations are not omitted because of AI summarization or simplification.
+- AI-generated requirements, user stories, and design proposals must be reviewed by authorized human reviewers designated by `[Organization]` for product and engineering review.
+- The Engineering Team Function must confirm that non-functional requirements, security expectations, and compliance obligations are not omitted because of AI summarization or simplification.
 
 ### 9.2. Implementation Controls
 
-- Developers may use AI to accelerate implementation, but they remain responsible for understanding the submitted code.
+- Users may use AI to accelerate implementation, but they remain responsible for understanding the submitted code.
 - For AI-assisted changes proposed for merge, the responsible human submitter must be able to explain the change objective, logic, dependencies, risks, and validation performed.
 - If an AI agent generated or materially transformed the submitted code, the agent may be recorded as the technical origin of the change, but accountability for merge, approval, and deployment outcomes must remain explicitly assigned to authorized human reviewers, approvers, or deployers.
 - AI-assisted changes that add or modify agent memory, retrieval pipelines, prompts, tool definitions, plugins, Skills, MCP servers, or external connectors must be reviewed for privilege scope, provenance, version pinning, rollback feasibility, and poisoning risk.
@@ -409,15 +409,15 @@ This section defines the mandatory stage-specific control gates for AI-assisted 
 
 ### 9.4. Review and Approval Controls
 
-- Human reviewers must review AI-assisted changes according to the same or stricter standards as other changes.
-- Reviewers must challenge unclear logic, unverifiable claims, weak tests, unexplained dependencies, and suspicious code patterns regardless of whether the author used AI assistance.
+- Authorized human reviewers must review AI-assisted changes according to the same or stricter standards as other changes.
+- Authorized human reviewers must challenge unclear logic, unverifiable claims, weak tests, unexplained dependencies, and suspicious code patterns regardless of whether the author used AI assistance.
 - Required approvals must come from authorized humans, not from an AI-generated recommendation alone.
 
 ### 9.5. Deployment and Post-Deployment Controls
 
 - AI-assisted releases must follow existing release management and deployment controls.
 - Any state-changing production action prepared, recommended, or initiated through an AI-assisted workflow must require an authorized human approval step before execution.
-- Teams must retain clear rollback plans and ownership for changes materially influenced by AI output.
+- The Engineering Team Function must retain clear rollback plans and ownership for changes materially influenced by AI output.
 - Post-deployment issues linked to AI-assisted work must be documented and fed back into tool usage guidance, approval conditions, or team practices.
 
 ## 10. Responsibilities
