@@ -163,6 +163,8 @@ Approved AI tools may be used to:
 
 Users must validate that AI-generated analysis reflects the actual system context and does not omit important technical, security, or compliance constraints.
 
+The control gates for accepting AI-assisted planning and design outputs are defined in Section 9.1.
+
 ### 5.2. Coding, Refactoring, and Migration Support
 
 Approved AI tools may be used to:
@@ -176,6 +178,8 @@ AI-generated code must be treated as untrusted until reviewed. Engineers must co
 
 Where an AI agent generates, refactors, or migrates code with limited direct human authorship, the workflow must still assign a responsible human for review, merge, and deployment decisions as required by this policy.
 
+The control gates for accepting and merging AI-assisted implementation outputs are defined in Sections 9.2, 9.3, and 9.4.
+
 ### 5.3. Testing, Quality, and Debugging Support
 
 Approved AI tools may be used to:
@@ -187,6 +191,8 @@ Approved AI tools may be used to:
 
 AI assistance must not be used to fabricate test evidence or to claim test coverage, performance results, or security assurance that was not actually achieved.
 
+The control gates for accepting AI-assisted testing and validation outputs are defined in Section 9.3.
+
 ### 5.4. Documentation and Knowledge Support
 
 Approved AI tools may be used to:
@@ -196,6 +202,8 @@ Approved AI tools may be used to:
 - Summarize implementation details for internal knowledge transfer.
 
 Users must verify that generated documentation accurately matches the implemented system and does not disclose confidential or restricted information inappropriately.
+
+Where documentation is used as release, operational, or approval evidence, the applicable review and approval gates are defined in Sections 9.4 and 9.5.
 
 ### 5.5. Operational and Automation Support
 
@@ -209,6 +217,8 @@ Approved AI tools may be used to assist with:
 Operational use must remain subject to existing change management, production access, segregation of duties, and incident management controls.
 
 AI-assisted operational workflows may prepare or recommend production changes, but execution of any state-changing production action must remain under the Human-in-the-Loop controls defined in Sections 8 and 9.
+
+The control gates for AI-assisted operational changes and production execution are defined in Section 9.5.
 
 ## 6. Restricted and Prohibited Use
 
