@@ -288,6 +288,8 @@ The AI Governance Function must maintain the official registry of approved AI to
 - Usage restrictions or prohibitions.
 - Approval owner and review date.
 
+The registry may be maintained as a separate operational appendix to this policy, such as [`ai-governance-approved-tools-appendix.md`](./ai-governance-approved-tools-appendix.md). When maintained separately, that appendix remains part of the governance document set but is updated independently from the revision cycle of a specific policy version.
+
 ### 7.4. Revalidation and Retirement
 
 Approved tools must be reviewed periodically and when material changes occur, including:
