@@ -11,7 +11,7 @@
 
 ## 2. Acknowledgement Statement
 
-I confirm that I have read the policy referenced in Section 1, reviewed its rules and requirements, and taken them into notice for use in my work performed for `[Organization]`.
+I confirm that I have read the policy referenced in Section 1, reviewed its rules and requirements, including any external guidance that the policy requires Users to review, and taken them into notice for use in my work performed for `[Organization]`.
 
 ## 3. User Confirmation Register
 

@@ -428,6 +428,7 @@ Users must:
 
 - Use only approved tools and approved integration paths.
 - Understand the limitations of the AI capability they are using.
+- Review the [OWASP Top 10 for Agentic Applications for 2026](https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/) guidance and remain familiar with its relevant risks and mitigations when using AI agents or connected agentic workflows.
 - Protect `[Organization]` and customer data when preparing prompts, files, logs, or repository context.
 - Avoid persisting unvalidated external content into agent memory, shared knowledge stores, reusable prompt assets, or reusable tool configurations.
 - Review, test, and validate AI-generated outputs before relying on them.

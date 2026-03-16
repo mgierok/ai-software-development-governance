@@ -67,7 +67,7 @@ Before the revision is announced for confirmation, the acknowledgement file must
 
 ### 4.6. User Review and Confirmation
 
-Each in-scope User is required to read the released policy revision and confirm that review in the revision-specific acknowledgement file by adding their entry to the confirmation register. This requirement applies to any employee, contractor, intern, or third-party service provider acting on behalf of the organization when that actor uses AI capabilities covered by the policy.
+Each in-scope User is required to read the released policy revision, together with any external guidance that the revision explicitly requires Users to review, and confirm that review in the revision-specific acknowledgement file by adding their entry to the confirmation register. This requirement applies to any employee, contractor, intern, or third-party service provider acting on behalf of the organization when that actor uses AI capabilities covered by the policy.
 
 ### 4.7. User Commit and Push Requirement
 
