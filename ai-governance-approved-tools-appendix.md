@@ -17,7 +17,7 @@ This appendix supplements [`ai-engineering-policy-draft.md`](./ai-engineering-po
 
 ## 3. AI Tool Decision Register
 
-The register should contain one row per tool, integration, plugin, Skill, connector, or MCP server decision record, together with the specific restrictions and conditions that define its approved organizational use.
+The register should contain one row per tool, integration, plugin, skill, connector, or MCP server decision record, together with the specific restrictions and conditions that define its approved organizational use.
 
 | Tool name | Source location | Tool description | Decision | Restrictions | Rationale |
 | --- | --- | --- | --- | --- | --- |

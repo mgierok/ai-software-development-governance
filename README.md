@@ -22,13 +22,15 @@ An adopting organization should begin by creating its own fork of this repositor
 
 Before publishing any internal revision, the adopting organization should review `ai-engineering-policy-draft.md` in full and replace all organization-specific placeholders with values appropriate for its own environment.
 
-That review should also confirm that the draft covers the current agentic AI risk profile relevant to the organization.
+That review should also confirm that the draft remains aligned with the current AI and agentic risk profile relevant to the organization, including any external guidance that the policy requires users to review.
+
+The draft is intended to define organization-specific rules, responsibilities, and approval boundaries. Adopting organizations should avoid restating detailed external threat taxonomies in the policy text when those materials are already referenced as required guidance.
 
 At minimum, the organization should complete:
 
 - The organization name placeholder.
-- The governance, engineering, management, technical leadership, legal, executive, and security role placeholders used throughout the policy.
-- Any approval quorum, review function, or equivalent operating model details needed to make the policy actionable.
+- The governance, platform or architecture, security or risk, engineering team, management, technical leadership, and any additional governance placeholders used throughout the policy.
+- Any equivalent organization-specific approval model details needed to make the policy actionable.
 
 ### 3.3. Confirm Policy Readiness
 
