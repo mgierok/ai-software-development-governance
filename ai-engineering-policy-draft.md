@@ -59,8 +59,6 @@ If an AI tool is used on `[Organization]` devices, `[Organization]` repositories
 
 ## 3. Definitions
 
-Square-bracketed text in this policy identifies organization-specific values that downstream adopters must replace for their own environment. Such placeholders are defined in this section only when they establish a recurring policy term used throughout the document.
-
 ### 3.1. AI Agent
 
 An AI-enabled software system capable of executing tasks with limited or significant autonomy, including planning, calling tools, manipulating files, retrieving data, or taking actions across one or more systems.
@@ -89,25 +87,25 @@ A code, configuration, infrastructure, security, or data-related change that cou
 
 The AI Governance Function is the organization-defined function, committee, or delegated authority that reviews and decides whether AI tools, integrations, and related capabilities may be used under this policy.
 
-For the adopting organization, this function is assigned to `[AI Governance Function]`. It may include designated representatives from `[Engineering Governance Role]`, `[Platform or Architecture Governance Role]`, `[Security or Risk Governance Role]`, and `[Additional Governance Role]`.
+Under this policy, this function is assigned to `[AI Governance Function]`. It may include designated representatives from `[Engineering Governance Role]`, `[Platform or Architecture Governance Role]`, `[Security or Risk Governance Role]`, and `[Additional Governance Role]`.
 
 ### 3.8. Engineering Team Function
 
 The Engineering Team Function is the organization-defined engineering team or equivalent delivery function responsible for repository-level implementation practices under this policy.
 
-For the adopting organization, this function is assigned to `[Engineering Team Function]`.
+Under this policy, this function is assigned to `[Engineering Team Function]`.
 
 ### 3.9. Engineering Management Role
 
 The Engineering Management Role is the organization-defined management role accountable for engineering team oversight under this policy.
 
-For the adopting organization, this role is assigned to `[Engineering Management Role]`.
+Under this policy, this role is assigned to `[Engineering Management Role]`.
 
 ### 3.10. Technical Leadership Role
 
 The Technical Leadership Role is the organization-defined technical leadership role accountable for architecture, quality, or delivery decisions under this policy.
 
-For the adopting organization, this role is assigned to `[Technical Leadership Role]`.
+Under this policy, this role is assigned to `[Technical Leadership Role]`.
 
 ### 3.11. User
 
@@ -288,7 +286,7 @@ The AI Governance Function must maintain the official registry of approved AI to
 - Usage restrictions or prohibitions.
 - Approval owner and review date.
 
-The registry may be maintained as a separate operational appendix to this policy, such as [`ai-governance-approved-tools-appendix.md`](./ai-governance-approved-tools-appendix.md). When maintained separately, that appendix remains part of the governance document set but is updated independently from the revision cycle of a specific policy version.
+The registry may be maintained as a separate operational appendix to this policy, such as [`ai-governance-approved-tools-appendix.md`](./ai-governance-approved-tools-appendix.md), provided that the appendix remains governed under this policy framework.
 
 ### 7.4. Revalidation and Retirement
 
@@ -437,5 +435,3 @@ This policy must be reviewed at least annually and whenever a material change oc
 - Significant changes in security threats or attack techniques.
 - Regulatory, contractual, or legal changes affecting AI usage.
 - Material incidents, audit findings, or recurring control failures related to AI-assisted development.
-
-Policy updates must preserve section numbering, structural consistency, and repository reference integrity in accordance with the repository governance instructions.
