@@ -136,7 +136,7 @@ Any external side effect that creates, modifies, deletes, deploys, restarts, sca
 2. Default-deny for unapproved external capabilities.
    External AI-connected tools, public MCP servers, public Skills, and third-party connectors must not be used unless they have been approved.
 3. Risk-based use is required.
-   The level of oversight, validation, and control must increase in proportion to the sensitivity of the code, data, environment, and business impact involved.
+   The level of oversight, validation, approval, and control must increase when AI-assisted work involves a High-Risk Change, sensitive data, privileged access, production environments, or material business impact.
 4. Least privilege must be enforced.
    AI systems may receive only the minimum context, permissions, and tool access needed for the task being performed.
 5. Verification before reliance is required.
