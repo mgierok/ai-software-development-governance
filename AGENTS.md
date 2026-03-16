@@ -9,6 +9,7 @@
 ## 2. Repository Reference Maintenance
 
 - Whenever a file is renamed or moved, agents must update inbound references to that file across the repository in the same change set. Completed PRD and TASK artifacts are excluded from this requirement.
+- Whenever `ai-engineering-policy-draft.md`, `ai-engineering-policy-acknowledgement-template.md`, or `ai-governance-approved-tools-appendix.md` is updated, agents must review the repository root `README.md` for affected descriptions, procedures, and references and update `README.md` in the same change set whenever needed to preserve cross-document consistency.
 - Whenever a Markdown heading changes, including a title change or a numeric prefix change, agents must update inbound heading references across the repository in the same change set.
 - This requirement applies to Markdown links, text references, tables of contents, and any other repository content that points readers to the changed file or heading.
 
