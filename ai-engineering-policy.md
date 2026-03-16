@@ -100,9 +100,7 @@ The `[AI Governance Function]` is responsible for defining approval criteria and
 - `[Security or Risk Governance Role]`
 - `[Additional Governance Role]`
 
-Any approval decision issued by the `[AI Governance Function]` requires acceptance from at least `[Approval Quorum]` members of this function.
-
-The `[AI Governance Function]` may require an additional opinion from `[Legal Review Function]` or `[Executive Leadership Function]` when it determines that the request has elevated legal, commercial, strategic, or organizational risk.
+The approval workflow, quorum requirements, and escalation points for the `[AI Governance Function]` are defined in Section 7.
 
 ### 3.8. User
 
@@ -244,7 +242,7 @@ Users must not use AI tools to:
 
 ### 7.1. Mandatory Approval Requirement
 
-Users may use only AI tools and integrations that have been reviewed and approved for the intended use case. Approval must cover both the tool itself and any connected capabilities that materially change its risk profile, including Skills, plugins, APIs, MCP servers, or automation endpoints. An approval is valid only when at least `[Approval Quorum]` members of the `[AI Governance Function]` have accepted the request. If the `[AI Governance Function]` determines that additional legal or executive input is required, the approval is not complete until the required opinion has been obtained.
+Users may use only AI tools and integrations that have been reviewed and approved for the intended use case under the workflow defined in Section 7.2. Approval must cover both the tool itself and any connected capabilities that materially change its risk profile, including Skills, plugins, APIs, MCP servers, or automation endpoints.
 
 ### 7.2. Approval Workflow
 
@@ -402,11 +400,8 @@ The `[Engineering Management Role]` and `[Technical Leadership Role]` must:
 The `[AI Governance Function]` must:
 
 - Operate as the approval body defined by `[Organization]` for AI tool governance.
-- Ensure that any approval or rejection decision is supported by at least `[Approval Quorum]` members of this function.
-- Decide whether a given request requires an additional opinion from `[Legal Review Function]` or `[Executive Leadership Function]`.
-- Maintain the approval framework and evaluation criteria for AI tools.
-- Review requests for tools, Skills, MCP servers, and related integrations.
-- Maintain the official approved registry and associated usage restrictions.
+- Execute and maintain the approval and onboarding process defined in Section 7.
+- Maintain the approval framework, evaluation criteria, official approved registry, and associated usage restrictions.
 - Periodically reassess approved tools based on evolving risk, legal, and security considerations.
 - Advise on secure use patterns, threat scenarios, and required controls.
 - Monitor for misuse, anomalous behavior, or policy violations where monitoring is in scope.
