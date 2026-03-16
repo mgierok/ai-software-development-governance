@@ -54,15 +54,19 @@ The revision directory must contain:
 - A copy of the updated policy file for the released revision, renamed to remove the `draft` suffix from the source filename.
 - A copy of the acknowledgement template for that same revision, renamed to remove the `template` suffix from the source filename.
 
-### 4.4. Prepare the Acknowledgement File
+### 4.4. Replace Organization-Specific Placeholders in the Acknowledgement File
+
+Before the revision is announced for confirmation, the acknowledgement file must be updated to replace any organization-specific placeholders carried forward from the template, including the `[Organization]` placeholder in the acknowledgement statement.
+
+### 4.5. Prepare the Acknowledgement Metadata
 
 Before the revision is announced for confirmation, the acknowledgement file must be completed with the required metadata for the released policy version, including the correct policy reference, revision identifier, modification date, and checksums.
 
-### 4.5. User Review and Confirmation
+### 4.6. User Review and Confirmation
 
 Each User is required to read the released policy revision and confirm that review in the revision-specific acknowledgement file by adding their entry to the confirmation register.
 
-### 4.6. User Commit and Push Requirement
+### 4.7. User Commit and Push Requirement
 
 Each User must record their own confirmation through a repository change created by that User. After adding their entry to the acknowledgement file, the User must commit and push that change to the repository.
 
