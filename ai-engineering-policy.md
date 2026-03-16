@@ -66,6 +66,13 @@ The following placeholders identify organization-specific actors or structures t
 - `[Engineering Team Function]`: the engineering team or equivalent delivery function responsible for repository-level implementation practices.
 - `[Engineering Management Role]`: the management role accountable for engineering team oversight.
 - `[Technical Leadership Role]`: the technical leadership role accountable for architecture, quality, or delivery decisions.
+- `[Engineering Governance Role]`: a governance participant representing engineering control expectations in the approval process.
+- `[Platform or Architecture Governance Role]`: a governance participant representing platform, architecture, or infrastructure concerns in the approval process.
+- `[Security or Risk Governance Role]`: a governance participant representing security, privacy, compliance, or risk concerns in the approval process.
+- `[Additional Governance Role]`: any additional governance participant required by the adopting organization.
+- `[Legal Review Function]`: the legal review function that must provide input when tool usage raises contractual, licensing, or regulatory concerns.
+- `[Executive Leadership Function]`: the executive authority that must provide input when a tool request requires senior business approval.
+- `[Approval Quorum]`: the minimum number of authorized approval participants required to record a valid decision.
 
 ### 3.1. AI Agent
 
