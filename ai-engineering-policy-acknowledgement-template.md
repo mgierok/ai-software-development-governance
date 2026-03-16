@@ -15,6 +15,8 @@ I confirm that I have read the policy referenced in Section 1, reviewed its rule
 
 ## 3. User Confirmation Register
 
+This register must be completed by each in-scope User, including any employee, contractor, intern, or third-party service provider acting on behalf of `[Organization]` when that actor uses AI capabilities covered by the policy.
+
 | Full Name | Date |
 | --- | --- |
 |  |  |
