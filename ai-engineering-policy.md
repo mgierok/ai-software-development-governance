@@ -10,7 +10,7 @@ This policy establishes rules for:
 - Using AI assistance in requirements analysis, design, implementation, testing, documentation, and operational support.
 - Protecting `[Organization]` data, customer data, source code, and intellectual property when AI tools are used.
 - Preventing unsafe delegation of engineering decisions to autonomous or semi-autonomous systems.
-- Ensuring that human employees remain accountable for code, architecture, releases, and production outcomes.
+- Ensuring that authorized human personnel remain accountable for code, architecture, releases, and production outcomes.
 
 This policy is intended to reduce risks including:
 
