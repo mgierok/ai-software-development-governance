@@ -17,7 +17,7 @@ This policy is intended to reduce risks including:
 - Data leakage to unapproved external services.
 - Introduction of insecure, incorrect, unlicensed, or non-compliant code.
 - Unauthorized integrations, plugins, Skills, MCP servers, and automation paths.
-- Prompt injection, malicious tool execution, and supply-chain compromise through AI-connected tooling.
+- Agent goal hijack, malicious or unintended tool use, memory or context poisoning, and supply-chain compromise through AI-connected tooling.
 - Loss of traceability in engineering decisions and software change history.
 
 ## 2. Scope
@@ -288,7 +288,8 @@ The standard approval workflow is:
    - Data handling, retention, residency, and training usage terms.
    - Vendor risk, licensing terms, and legal restrictions.
    - Operational reliability, supportability, and business continuity implications.
-   - Potential for prompt injection, privilege escalation, or unsafe autonomous behavior.
+   - Potential for prompt injection, agent goal hijack, tool misuse, privilege escalation, memory or context poisoning, or unsafe autonomous behavior.
+   - Component provenance, signing, version pinning, update channels, and dependency trust for models, prompts, Skills, plugins, connectors, MCP servers, agents, datasets, and tool definitions.
 4. The AI Governance Function decides whether the request also requires an additional opinion from `[Legal Review Function]` or `[Executive Leadership Function]`.
 5. If an additional opinion is required, that opinion must be obtained and considered before a final approval decision is recorded.
 6. At least `[Approval Quorum]` members of the AI Governance Function review the request and record one of the following decisions:
@@ -317,6 +318,7 @@ Approved tools must be reviewed periodically and when material changes occur, in
 
 - A significant product feature change.
 - A change in vendor terms, hosting model, or model provider.
+- A change in connected tools, prompts, tool definitions, memory features, update channels, or dependency provenance.
 - A newly discovered security weakness or compliance concern.
 - Expansion to new data types, repositories, or environments.
 
@@ -338,14 +340,19 @@ Approved AI usage must meet the following baseline control requirements regardle
 - Users must provide only the minimum data needed for the task.
 - Sensitive code, tickets, logs, and documents must be redacted or withheld unless the approved tool explicitly permits that data class.
 - Data submitted to AI systems must be handled according to `[Organization]` classification, retention, and privacy requirements.
+- Persistent memory, retrieved context, embeddings, and shared knowledge stores must be treated as controlled data stores subject to source validation, segregation, retention limits, and rollback or purge procedures.
+- Untrusted or low-confidence content must not be committed into trusted long-term memory, shared context, or reusable prompt assets without validation appropriate to the risk.
 - Where technically feasible, approved internal or privacy-preserving deployment models should be preferred for higher-sensitivity work.
 
 ### 8.3. Secure Prompt and Tool Interaction Practices
 
-- Users must consider prompt injection and malicious content risks when providing external content, logs, web results, or repository material to AI agents.
+- Users must consider prompt injection, agent goal hijack, malicious tool output, and deceptive external content risks when providing external content, logs, web results, or repository material to AI agents.
 - AI agents must not be granted broad tool execution rights without guardrails, approval boundaries, and monitoring.
+- Tool permissions must be defined per tool with explicit scope, allowed operations, egress limits, and rate or cost boundaries appropriate to the use case.
 - Tool invocation paths must be constrained to intended systems and approved operations.
+- Connected data sources, tool descriptors, prompts, retrieved artefacts, and other external inputs must be validated before they can alter agent goals, memory, or action selection.
 - External side effects must be explicitly bounded to approved systems, operations, and authorization paths.
+- Agents must not automatically execute destructive, high-impact, cross-system, or externally routed tool actions without policy checks and, where required, human approval.
 - Human-in-the-Loop workflows are mandatory for any state-changing production action.
 - For state-changing production actions, the workflow must require an authorized human to review the intended target, proposed change, and expected effect and to issue the approval that permits execution.
 
@@ -360,12 +367,14 @@ Approved AI usage must meet the following baseline control requirements regardle
 
 - Material AI-assisted actions should be logged or otherwise recoverable through normal engineering records.
 - Logs should capture, where feasible and appropriate, the responsible user, tool used, action taken, target system, and relevant data classification.
+- Monitoring should detect unexpected goal changes, anomalous tool-chaining patterns, suspicious memory writes, repeated retrieval of low-trust context, and evidence of dependency or configuration drift.
 - Teams must preserve sufficient evidence to support incident investigation, audit, and retrospective review.
 
 ### 8.6. Environment Isolation and Change Control
 
 - Sensitive workflows should run in controlled environments with restricted connectivity and monitored access.
 - AI-assisted automation must respect existing branch protections, CI controls, deployment approvals, and production change windows.
+- Sensitive agentic workflows should use sandboxed execution, constrained egress, approved registries, pinned dependencies, and emergency revocation capability for compromised tools, prompts, or connectors where technically feasible.
 - Direct production actions by AI agents are prohibited unless an approved narrowly defined use case includes an authorized Human-in-the-Loop approval step, compensating controls, and auditable traceability.
 
 ## 9. Lifecycle Control Gates for AI-Assisted Delivery
@@ -382,6 +391,7 @@ This section defines the mandatory stage-specific control gates for AI-assisted 
 - Developers may use AI to accelerate implementation, but they remain responsible for understanding the submitted code.
 - For AI-assisted changes proposed for merge, the responsible human submitter must be able to explain the change objective, logic, dependencies, risks, and validation performed.
 - If an AI agent generated or materially transformed the submitted code, the agent may be recorded as the technical origin of the change, but accountability for merge, approval, and deployment outcomes must remain explicitly assigned to authorized human reviewers, approvers, or deployers.
+- AI-assisted changes that add or modify agent memory, retrieval pipelines, prompts, tool definitions, plugins, Skills, MCP servers, or external connectors must be reviewed for privilege scope, provenance, version pinning, rollback feasibility, and poisoning risk.
 - Large or high-risk AI-assisted changes should be broken into reviewable units where practical.
 
 ### 9.3. Testing and Validation Controls
@@ -411,6 +421,7 @@ Users must:
 - Use only approved tools and approved integration paths.
 - Understand the limitations of the AI capability they are using.
 - Protect `[Organization]` and customer data when preparing prompts, files, logs, or repository context.
+- Avoid persisting unvalidated external content into agent memory, shared knowledge stores, reusable prompt assets, or reusable tool configurations.
 - Review, test, and validate AI-generated outputs before relying on them.
 - Report suspicious, unsafe, or unexpected AI behavior.
 - Escalate when a task appears to exceed the approved use boundaries of a tool.
@@ -422,6 +433,7 @@ The Engineering Team Function must:
 - Define practical team-level guidance for approved AI use in their repositories and workflows.
 - Maintain code review, testing, and release discipline for AI-assisted changes.
 - Implement guardrails that restrict unapproved integrations and unsafe automation paths.
+- Maintain inventories, pinning practices, and change review expectations for prompts, tool definitions, connected agents, and other agentic dependencies used in team workflows.
 - Monitor recurring quality or security issues associated with AI usage and address them.
 
 ### 10.3. Engineering Management Role and Technical Leadership Role
@@ -440,6 +452,7 @@ The AI Governance Function must:
 - Execute and maintain the approval and onboarding process defined in Section 7.
 - Maintain the approval framework, evaluation criteria, official AI tool decision register, and associated usage restrictions.
 - Periodically reassess approved tools based on evolving risk, legal, and security considerations.
+- Periodically review this policy and its approval criteria against current recognized agentic security guidance, such as the OWASP Top 10 for Agentic Applications, and update control expectations where needed.
 - Advise on secure use patterns, threat scenarios, and required controls.
 - Monitor for misuse, anomalous behavior, or policy violations where monitoring is in scope.
 - Support investigation and remediation when AI-assisted activity contributes to a security event.
@@ -460,5 +473,6 @@ This policy must be reviewed at least annually and whenever a material change oc
 
 - Introduction of new AI-enabled engineering workflows.
 - Significant changes in security threats or attack techniques.
+- Material updates to recognized external agentic security guidance that affect this policy's control assumptions or threat coverage.
 - Regulatory, contractual, or legal changes affecting AI usage.
 - Material incidents, audit findings, or recurring control failures related to AI-assisted development.

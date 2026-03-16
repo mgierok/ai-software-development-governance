@@ -22,6 +22,8 @@ An adopting organization should begin by creating its own fork of this repositor
 
 Before publishing any internal revision, the adopting organization should review `ai-engineering-policy-draft.md` in full and replace all organization-specific placeholders with values appropriate for its own environment.
 
+That review should also confirm that the draft covers the current agentic AI risk profile relevant to the organization.
+
 At minimum, the organization should complete:
 
 - The organization name placeholder.
