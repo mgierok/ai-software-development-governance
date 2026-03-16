@@ -56,7 +56,7 @@ The revision directory must contain:
 
 ### 4.4. Prepare the Acknowledgement File
 
-Before the revision is announced for confirmation, the acknowledgement file must be completed with the required metadata for the released policy version, including the correct policy reference, version details, modification date, and checksums.
+Before the revision is announced for confirmation, the acknowledgement file must be completed with the required metadata for the released policy version, including the correct policy reference, revision identifier, modification date, and checksums.
 
 ### 4.5. User Review and Confirmation
 
