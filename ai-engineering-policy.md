@@ -29,7 +29,7 @@ This policy applies to all personnel who use AI capabilities in connection with 
 - Interns.
 - Third-party service providers acting on behalf of `[Organization]`.
 
-For the purposes of this policy, any person within this scope is referred to as a User.
+For the purposes of this policy, User has the meaning defined in Section 3.11.
 
 This policy applies to all AI-enabled software development activities, including:
 
