@@ -174,6 +174,8 @@ Approved AI tools may be used to:
 
 AI-generated code must be treated as untrusted until reviewed. Engineers must confirm correctness, maintainability, security, licensing implications, and consistency with internal coding standards.
 
+Where an AI agent generates, refactors, or migrates code with limited direct human authorship, the workflow must still assign a responsible human for review, merge, and deployment decisions as required by this policy.
+
 ### 5.3. Testing, Quality, and Debugging Support
 
 Approved AI tools may be used to:
@@ -374,7 +376,8 @@ This section defines the mandatory stage-specific control gates for AI-assisted 
 ### 9.2. Implementation Controls
 
 - Developers may use AI to accelerate implementation, but they remain responsible for understanding the submitted code.
-- Code authors must be able to explain the logic, dependencies, and risks of AI-assisted changes they propose for merge.
+- For AI-assisted changes proposed for merge, the responsible human submitter must be able to explain the change objective, logic, dependencies, risks, and validation performed.
+- If an AI agent generated or materially transformed the submitted code, the agent may be recorded as the technical origin of the change, but accountability for merge, approval, and deployment outcomes must remain explicitly assigned to authorized human reviewers, approvers, or deployers.
 - Large or high-risk AI-assisted changes should be broken into reviewable units where practical.
 
 ### 9.3. Testing and Validation Controls
