@@ -350,7 +350,7 @@ Approved AI usage must meet the following baseline control requirements regardle
 - Data submitted to AI systems must be handled according to `[Organization]` classification, retention, and privacy requirements.
 - Persistent memory, retrieved context, embeddings, and shared knowledge stores must be treated as controlled data stores subject to source validation, segregation, retention limits, and rollback or purge procedures.
 - Untrusted or low-confidence content must not be committed into trusted long-term memory, shared context, or reusable prompt assets without validation appropriate to the risk.
-- Where technically feasible, approved internal or privacy-preserving deployment models should be preferred for higher-sensitivity work.
+- Approved internal or privacy-preserving deployment models must be used for higher-sensitivity work unless the approved use case explicitly authorizes another deployment model.
 
 ### 8.3. Secure Prompt and Tool Interaction Practices
 
@@ -373,16 +373,16 @@ Approved AI usage must meet the following baseline control requirements regardle
 
 ### 8.5. Logging, Monitoring, and Traceability
 
-- Material AI-assisted actions should be logged or otherwise recoverable through normal engineering records.
-- Logs should capture, where feasible and appropriate, the responsible user, tool used, action taken, target system, and relevant data classification.
-- Monitoring should detect unexpected goal changes, anomalous tool-chaining patterns, suspicious memory writes, repeated retrieval of low-trust context, and evidence of dependency or configuration drift.
+- Material AI-assisted actions must be logged or otherwise recoverable through normal engineering records.
+- Logs must capture the responsible user, tool used, action taken, target system, and relevant data classification for the workflow records maintained under this policy.
+- Monitoring must detect unexpected goal changes, anomalous tool-chaining patterns, suspicious memory writes, repeated retrieval of low-trust context, and evidence of dependency or configuration drift.
 - Teams must preserve sufficient evidence to support incident investigation, audit, and retrospective review.
 
 ### 8.6. Environment Isolation and Change Control
 
-- Sensitive workflows should run in controlled environments with restricted connectivity and monitored access.
+- Sensitive workflows must run in controlled environments with restricted connectivity and monitored access.
 - AI-assisted automation must respect existing branch protections, CI controls, deployment approvals, and production change windows.
-- Sensitive agentic workflows should use sandboxed execution, constrained egress, approved registries, pinned dependencies, and emergency revocation capability for compromised tools, prompts, or connectors where technically feasible.
+- Sensitive agentic workflows must use sandboxed execution, constrained egress, approved registries, pinned dependencies, and emergency revocation capability for compromised tools, prompts, or connectors unless equivalent controls are explicitly approved for the use case.
 - Direct production actions by AI agents are prohibited unless an approved narrowly defined use case includes an authorized Human-in-the-Loop approval step, compensating controls, and auditable traceability.
 
 ## 9. Lifecycle Control Gates for AI-Assisted Delivery
@@ -400,7 +400,7 @@ This section defines the mandatory stage-specific control gates for AI-assisted 
 - For AI-assisted changes proposed for merge, the responsible human submitter must be able to explain the change objective, logic, dependencies, risks, and validation performed.
 - If an AI agent generated or materially transformed the submitted code, the agent may be recorded as the technical origin of the change, but accountability for merge, approval, and deployment outcomes must remain explicitly assigned to authorized human reviewers, approvers, or deployers.
 - AI-assisted changes that add or modify agent memory, retrieval pipelines, prompts, tool definitions, plugins, Skills, MCP servers, or external connectors must be reviewed for privilege scope, provenance, version pinning, rollback feasibility, and poisoning risk.
-- Large or high-risk AI-assisted changes should be broken into reviewable units where practical.
+- Large or high-risk AI-assisted changes must be broken into reviewable units unless an approved workflow requires a different review structure.
 
 ### 9.3. Testing and Validation Controls
 
@@ -410,7 +410,7 @@ This section defines the mandatory stage-specific control gates for AI-assisted 
 ### 9.4. Review and Approval Controls
 
 - Human reviewers must review AI-assisted changes according to the same or stricter standards as other changes.
-- Reviewers should challenge unclear logic, unverifiable claims, weak tests, unexplained dependencies, and suspicious code patterns regardless of whether the author used AI assistance.
+- Reviewers must challenge unclear logic, unverifiable claims, weak tests, unexplained dependencies, and suspicious code patterns regardless of whether the author used AI assistance.
 - Required approvals must come from authorized humans, not from an AI-generated recommendation alone.
 
 ### 9.5. Deployment and Post-Deployment Controls
