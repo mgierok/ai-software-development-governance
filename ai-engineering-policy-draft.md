@@ -4,6 +4,8 @@
 
 This policy defines how `[Organization]` may use AI tools during the software development lifecycle. Its purpose is to enable practical productivity gains while preserving engineering quality, security, legal compliance, and clear human accountability for delivered software.
 
+This policy is written for engineering readers and assumes baseline familiarity with standard software delivery practices such as code review, testing, CI/CD, access control, and production operations. It defines terms only where this policy gives them a specific governance, approval, or control meaning.
+
 This policy establishes the organization-level rules for:
 
 - Approving AI tools and connected capabilities used in engineering work.
@@ -16,8 +18,6 @@ This policy does not attempt to restate detailed external threat taxonomies or s
 ## 2. Scope
 
 This policy applies to all Users who use AI capabilities in connection with software delivery for `[Organization]`.
-
-For the purposes of this policy, User has the meaning defined in Section 3.5.
 
 This policy applies to AI-enabled engineering activities across the software delivery lifecycle, including:
 
@@ -32,9 +32,11 @@ This policy covers both internally built and third-party AI systems. If an AI to
 
 ## 3. Definitions
 
+This section defines only the terms that have a specific meaning in this policy. Routine engineering terms are used in their ordinary technical sense.
+
 ### 3.1. AI Agent
 
-An AI-enabled software system capable of executing tasks with limited or significant autonomy, including planning, calling tools, manipulating files, retrieving data, or taking actions across one or more systems.
+An AI-enabled system that can plan, call tools, manipulate files, retrieve data, or take actions across one or more systems with some degree of autonomy.
 
 ### 3.2. Approved AI Tool
 
@@ -48,7 +50,7 @@ A code, configuration, infrastructure, security, or data-related change that cou
 
 ### 3.4. AI Governance Function
 
-The AI Governance Function is the organization-defined function, committee, or delegated authority that reviews and decides whether AI tools, integrations, and related capabilities may be used under this policy.
+The function, committee, or delegated authority assigned to review and decide whether AI tools, integrations, and related capabilities may be used under this policy.
 
 Under this policy, this function is assigned to `[AI Governance Function]`. It may include designated representatives from `[Engineering Governance Role]`, `[Platform or Architecture Governance Role]`, `[Security or Risk Governance Role]`, and `[Additional Governance Role]`.
 
@@ -74,19 +76,19 @@ Any external side effect that creates, modifies, deletes, deploys, restarts, sca
 
 ### 3.9. Engineering Team Function
 
-The Engineering Team Function is the organization-defined engineering team or equivalent delivery function responsible for repository-level implementation practices under this policy.
+The engineering team or equivalent delivery function responsible for repository-level implementation practices under this policy.
 
 Under this policy, this function is assigned to `[Engineering Team Function]`.
 
 ### 3.10. Engineering Management Role
 
-The Engineering Management Role is the organization-defined management role accountable for engineering team oversight under this policy.
+The management role accountable for engineering team oversight under this policy.
 
 Under this policy, this role is assigned to `[Engineering Management Role]`.
 
 ### 3.11. Technical Leadership Role
 
-The Technical Leadership Role is the organization-defined technical leadership role accountable for architecture, quality, or delivery decisions under this policy.
+The technical leadership role accountable for architecture, quality, or delivery decisions under this policy.
 
 Under this policy, this role is assigned to `[Technical Leadership Role]`.
 
