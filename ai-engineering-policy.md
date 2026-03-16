@@ -2,13 +2,13 @@
 
 ## 1. Purpose
 
-This policy defines how the company may use AI tools, including AI agents, during the software development lifecycle. Its purpose is to enable practical productivity gains while preserving engineering quality, security, legal compliance, and accountability for delivered software.
+This policy defines how `[Organization]` may use AI tools, including AI agents, during the software development lifecycle. Its purpose is to enable practical productivity gains while preserving engineering quality, security, legal compliance, and accountability for delivered software.
 
 This policy establishes rules for:
 
 - Selecting and approving AI tools used in software development.
 - Using AI assistance in requirements analysis, design, implementation, testing, documentation, and operational support.
-- Protecting company data, customer data, source code, and intellectual property when AI tools are used.
+- Protecting `[Organization]` data, customer data, source code, and intellectual property when AI tools are used.
 - Preventing unsafe delegation of engineering decisions to autonomous or semi-autonomous systems.
 - Ensuring that human employees remain accountable for code, architecture, releases, and production outcomes.
 
@@ -22,12 +22,12 @@ This policy is intended to reduce risks including:
 
 ## 2. Scope
 
-This policy applies to all personnel who use AI capabilities in connection with software delivery for the company, including:
+This policy applies to all personnel who use AI capabilities in connection with software delivery for `[Organization]`, including:
 
 - Employees.
 - Contractors.
 - Interns.
-- Third-party service providers acting on behalf of the company.
+- Third-party service providers acting on behalf of `[Organization]`.
 
 For the purposes of this policy, any person within this scope is referred to as a User.
 
@@ -52,12 +52,20 @@ This policy applies to all AI delivery mechanisms used for engineering work, inc
 
 This policy covers both:
 
-- Company-built and internally hosted AI systems.
+- Internally built and internally hosted AI systems.
 - Third-party, SaaS-provided, partner-provided, or open-source AI tools.
 
-If an AI tool is used on company devices, company repositories, company tickets, company documents, or company data, it falls within the scope of this policy.
+If an AI tool is used on `[Organization]` devices, `[Organization]` repositories, `[Organization]` tickets, `[Organization]` documents, or `[Organization]` data, it falls within the scope of this policy.
 
 ## 3. Definitions
+
+The following placeholders identify organization-specific actors or structures that downstream adopters must replace for their own environment:
+
+- `[Organization]`: the adopting organization.
+- `[AI Governance Function]`: the function, committee, or delegated authority responsible for AI tool governance and approval decisions.
+- `[Engineering Team Function]`: the engineering team or equivalent delivery function responsible for repository-level implementation practices.
+- `[Engineering Management Role]`: the management role accountable for engineering team oversight.
+- `[Technical Leadership Role]`: the technical leadership role accountable for architecture, quality, or delivery decisions.
 
 ### 3.1. AI Agent
 
@@ -77,28 +85,28 @@ A protocol or integration mechanism that enables AI systems to interact with ext
 
 ### 3.5. Approved AI Tool
 
-An AI system, agent, model integration, Skill, plugin, connector, or MCP server that has been reviewed and explicitly authorized for use under the company approval process and is listed in the official registry of approved capabilities.
+An AI system, agent, model integration, Skill, plugin, connector, or MCP server that has been reviewed and explicitly authorized for use under the `[Organization]` approval process and is listed in the official registry of approved capabilities.
 
 ### 3.6. High-Risk Change
 
 A code, configuration, infrastructure, security, or data-related change that could materially affect production availability, confidentiality, integrity, regulatory obligations, customer trust, or financial outcomes if it is incorrect or misused.
 
-### 3.7. Governance Group
+### 3.7. [AI Governance Function]
 
-A governance group responsible for defining approval criteria and making decisions about the use of AI tools in software development. The group consists of organization-defined approver roles, such as:
+The `[AI Governance Function]` is responsible for defining approval criteria and making decisions about the use of AI tools in software development. This function consists of organization-defined approver roles, such as:
 
 - `[Engineering Governance Role]`
 - `[Platform or Architecture Governance Role]`
 - `[Security or Risk Governance Role]`
 - `[Additional Governance Role]`
 
-Any approval decision issued by the governance group requires acceptance from at least `[Approval Quorum]` members of this group.
+Any approval decision issued by the `[AI Governance Function]` requires acceptance from at least `[Approval Quorum]` members of this function.
 
-The governance group may require an additional opinion from `[Legal Review Function]` or `[Executive Leadership Function]` when it determines that the request has elevated legal, commercial, strategic, or organizational risk.
+The `[AI Governance Function]` may require an additional opinion from `[Legal Review Function]` or `[Executive Leadership Function]` when it determines that the request has elevated legal, commercial, strategic, or organizational risk.
 
 ### 3.8. User
 
-Any employee, contractor, intern, or third-party service provider acting on behalf of the company who uses AI tools, AI agents, or AI-enabled workflows covered by this policy.
+Any employee, contractor, intern, or third-party service provider acting on behalf of `[Organization]` who uses AI tools, AI agents, or AI-enabled workflows covered by this policy.
 
 ## 4. Governance Principles
 
@@ -183,7 +191,7 @@ The following restrictions apply even when an AI tool is otherwise approved.
 
 ### 6.1. No Unsupervised Delegation of Accountable Engineering Decisions
 
-Users must not allow AI agents to make final decisions on behalf of the company for:
+Users must not allow AI agents to make final decisions on behalf of `[Organization]` for:
 
 - Production releases.
 - Security exceptions.
@@ -199,11 +207,11 @@ Users must not:
 - Connect agents to unapproved public MCP servers or external connectors.
 - Install unverified Skills, plugins, or extensions from public repositories.
 - Circumvent approved procurement, legal review, vendor review, or security review processes.
-- Route company work through personal AI accounts or unapproved shadow IT services.
+- Route `[Organization]` work through personal AI accounts or unapproved shadow IT services.
 
-### 6.3. No Non-Company Use of Company-Provided Licensed Tools
+### 6.3. No Non-`[Organization]` Use of `[Organization]`-Provisioned Licensed Tools
 
-Users must not use AI tools made available under company-provided licenses for personal, external client, partner, or other non-company purposes. Such tools are permitted only for internal company use.
+Users must not use AI tools made available under licenses provisioned by `[Organization]` for personal, external client, partner, or other non-`[Organization]` purposes. Such tools are permitted only for internal `[Organization]` use.
 
 ### 6.4. No Unauthorized Exposure of Sensitive Data
 
@@ -236,22 +244,22 @@ Users must not use AI tools to:
 
 ### 7.1. Mandatory Approval Requirement
 
-Users may use only AI tools and integrations that have been reviewed and approved for the intended use case. Approval must cover both the tool itself and any connected capabilities that materially change its risk profile, including Skills, plugins, APIs, MCP servers, or automation endpoints. An approval is valid only when at least `[Approval Quorum]` members of the governance group have accepted the request. If the governance group determines that additional legal or executive input is required, the approval is not complete until the required opinion has been obtained.
+Users may use only AI tools and integrations that have been reviewed and approved for the intended use case. Approval must cover both the tool itself and any connected capabilities that materially change its risk profile, including Skills, plugins, APIs, MCP servers, or automation endpoints. An approval is valid only when at least `[Approval Quorum]` members of the `[AI Governance Function]` have accepted the request. If the `[AI Governance Function]` determines that additional legal or executive input is required, the approval is not complete until the required opinion has been obtained.
 
 ### 7.2. Approval Workflow
 
 The standard approval workflow is:
 
 1. A requester submits a tool or integration request describing the intended engineering use case, users, data involved, connected systems, and expected operational benefits.
-2. The governance group assesses:
+2. The `[AI Governance Function]` assesses:
    - Security architecture and authentication model.
    - Data handling, retention, residency, and training usage terms.
    - Vendor risk, licensing terms, and legal restrictions.
    - Operational reliability, supportability, and business continuity implications.
    - Potential for prompt injection, privilege escalation, or unsafe autonomous behavior.
-3. The governance group decides whether the request also requires an additional opinion from `[Legal Review Function]` or `[Executive Leadership Function]`.
+3. The `[AI Governance Function]` decides whether the request also requires an additional opinion from `[Legal Review Function]` or `[Executive Leadership Function]`.
 4. If an additional opinion is required, that opinion must be obtained and considered before a final approval decision is recorded.
-5. At least `[Approval Quorum]` members of the governance group review the request and record one of the following decisions:
+5. At least `[Approval Quorum]` members of the `[AI Governance Function]` review the request and record one of the following decisions:
    - Approved.
    - Approved with restrictions.
    - Rejected.
@@ -260,7 +268,7 @@ The standard approval workflow is:
 
 ### 7.3. Registry Management
 
-The governance group must maintain a current registry of approved AI tools and integrations. The registry should include, as applicable:
+The `[AI Governance Function]` must maintain a current registry of approved AI tools and integrations. The registry should include, as applicable:
 
 - Tool or integration name.
 - Approved use cases.
@@ -281,7 +289,7 @@ Approved tools must be reviewed periodically and when material changes occur, in
 - A newly discovered security weakness or compliance concern.
 - Expansion to new data types, repositories, or environments.
 
-Approval may be suspended or revoked if the tool no longer meets company requirements.
+Approval may be suspended or revoked if the tool no longer meets `[Organization]` requirements.
 
 ## 8. Security and Engineering Control Requirements
 
@@ -298,7 +306,7 @@ Approved AI usage must meet the following control requirements.
 
 - Users must provide only the minimum data needed for the task.
 - Sensitive code, tickets, logs, and documents must be redacted or withheld unless the approved tool explicitly permits that data class.
-- Data submitted to AI systems must be handled according to company classification, retention, and privacy requirements.
+- Data submitted to AI systems must be handled according to `[Organization]` classification, retention, and privacy requirements.
 - Where technically feasible, approved internal or privacy-preserving deployment models should be preferred for higher-sensitivity work.
 
 ### 8.3. Secure Prompt and Tool Interaction Practices
@@ -367,34 +375,34 @@ Users must:
 
 - Use only approved tools and approved integration paths.
 - Understand the limitations of the AI capability they are using.
-- Protect company and customer data when preparing prompts, files, logs, or repository context.
+- Protect `[Organization]` and customer data when preparing prompts, files, logs, or repository context.
 - Review, test, and validate AI-generated outputs before relying on them.
 - Report suspicious, unsafe, or unexpected AI behavior.
 - Escalate when a task appears to exceed the approved use boundaries of a tool.
 
-### 10.2. Engineering Teams
+### 10.2. [Engineering Team Function]
 
-Engineering teams must:
+The `[Engineering Team Function]` must:
 
 - Define practical team-level guidance for approved AI use in their repositories and workflows.
 - Maintain code review, testing, and release discipline for AI-assisted changes.
 - Implement guardrails that restrict unapproved integrations and unsafe automation paths.
 - Monitor recurring quality or security issues associated with AI usage and address them.
 
-### 10.3. Engineering Managers and Technical Leads
+### 10.3. [Engineering Management Role] and [Technical Leadership Role]
 
-Engineering managers and technical leads must:
+The `[Engineering Management Role]` and `[Technical Leadership Role]` must:
 
 - Ensure team members understand this policy and the approved tooling model.
 - Decide when additional review, pair validation, or specialist approval is needed for higher-risk AI-assisted work.
 - Balance productivity goals against engineering quality and operational risk.
 
-### 10.4. Governance Group
+### 10.4. [AI Governance Function]
 
-The governance group must:
+The `[AI Governance Function]` must:
 
-- Operate as the approval body defined by the organization for AI tool governance.
-- Ensure that any approval or rejection decision is supported by at least `[Approval Quorum]` members of the group.
+- Operate as the approval body defined by `[Organization]` for AI tool governance.
+- Ensure that any approval or rejection decision is supported by at least `[Approval Quorum]` members of this function.
 - Decide whether a given request requires an additional opinion from `[Legal Review Function]` or `[Executive Leadership Function]`.
 - Maintain the approval framework and evaluation criteria for AI tools.
 - Review requests for tools, Skills, MCP servers, and related integrations.
@@ -406,17 +414,17 @@ The governance group must:
 
 ## 11. Enforcement
 
-Violations of this policy may result in one or more of the following actions, subject to applicable company procedures:
+Violations of this policy may result in one or more of the following actions, subject to applicable `[Organization]` procedures:
 
 - Removal or restriction of access to AI tools or connected systems.
 - Mandatory remediation steps, retraining, or increased review requirements.
 - Security or compliance investigation.
 - Revocation of approval for a tool, integration, or use case.
-- Disciplinary action consistent with company policy and contractual obligations.
+- Disciplinary action consistent with `[Organization]` policy and contractual obligations.
 
 ## 12. Review and Updates
 
-This policy must be reviewed at least annually and whenever a material change occurs in the company AI operating model, including:
+This policy must be reviewed at least annually and whenever a material change occurs in the `[Organization]` AI operating model, including:
 
 - Introduction of new AI-enabled engineering workflows.
 - Significant changes in security threats or attack techniques.
