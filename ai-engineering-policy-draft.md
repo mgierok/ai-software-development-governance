@@ -309,7 +309,7 @@ This section defines the mandatory stage-specific control gates for AI-assisted 
 
 - Users may use AI to accelerate implementation, but they remain responsible for understanding the submitted code.
 - For AI-assisted changes proposed for merge, the responsible human submitter must be able to explain the change objective, logic, dependencies, risks, and validation performed.
-- If an AI agent generated or materially transformed the submitted code, the agent may be recorded as the technical origin of the change, but accountability for merge, approval, and deployment outcomes must remain explicitly assigned to authorized human reviewers, approvers, or deployers.
+- If an AI agent generated or materially transformed the submitted code, that fact may be recorded as change provenance or technical origin metadata, but not as a substitute for the authenticated human identity responsible for submission, review, approval, or deployment. Accountability for merge, approval, and deployment outcomes must remain explicitly assigned to authorized human reviewers, approvers, or deployers.
 - AI-assisted changes that add or modify high-impact AI integrations or connected capabilities must receive review appropriate to their privilege scope, provenance, and rollback risk.
 - Large or high-risk AI-assisted changes must be broken into reviewable units unless an approved workflow requires a different review structure.
 
