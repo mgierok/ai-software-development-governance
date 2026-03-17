@@ -298,7 +298,7 @@ Approved AI usage must meet the following baseline control requirements regardle
 
 ## 9. Lifecycle Control Gates for AI-Assisted Delivery
 
-This section defines the mandatory stage-specific control gates for AI-assisted outputs produced during the lifecycle activities described in Section 5. Section 8 defines the baseline controls that apply to all approved AI use; this section defines when specific outputs may be accepted, merged, deployed, or otherwise relied on.
+This section defines the mandatory stage-specific control gates for AI-assisted outputs produced during the lifecycle activities described in Section 5. Section 8 defines the baseline controls and validation expectations that apply to all approved AI use; this section defines the stage-specific acceptance, testing, review, merge, and deployment gates that determine when specific outputs may be relied on.
 
 ### 9.1. Requirements and Design Controls
 
