@@ -19,6 +19,6 @@ This appendix supplements [`ai-engineering-policy-draft.md`](./ai-engineering-po
 
 The register should contain one row per tool, integration, plugin, skill, connector, or MCP server decision record, together with the specific restrictions and conditions that define its approved organizational use.
 
-| Tool name | Source location | Tool description | Decision | Restrictions | Rationale |
-| --- | --- | --- | --- | --- | --- |
-| `[Tool Name]` | `[Repository URL or N/A]` | `[Short description of the tool and its engineering use case.]` | `[Approved / Approved with restrictions / Rejected / Suspended / Revoked]` | `[Environment, data, access, or workflow restrictions.]` | `[Summary of the approval or decision basis.]` |
+| Tool name | Version | Source location | Tool description | Decision | Decision issued by | Restrictions | Rationale |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| `[Tool Name]` | `[Version or N/A]` | `[Repository URL or N/A]` | `[Short description of the tool and its engineering use case.]` | `[Approved / Approved with restrictions / Rejected / Suspended / Revoked]` | `[Name(s) of the person or persons who issued the decision.]` | `[Environment, data, access, or workflow restrictions.]` | `[Summary of the approval or decision basis.]` |

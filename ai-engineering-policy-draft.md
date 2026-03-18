@@ -231,9 +231,11 @@ The standard approval workflow is:
 The AI Governance Function must maintain the official AI tool decision register. The register should include, as applicable:
 
 - Tool or integration name.
+- Version or `N/A` when no specific version is applicable.
 - Source location or `N/A` when no public source location is available.
 - Tool description.
 - Decision.
+- Decision issued by.
 - Restrictions.
 - Rationale.
 
@@ -249,7 +251,7 @@ Approved tools must be reviewed periodically and when material changes occur, in
 - A newly discovered security weakness or compliance concern.
 - Expansion to new data types, repositories, or environments.
 
-Approval may be suspended or revoked if the tool no longer meets `[Organization]` requirements.
+Approval may be suspended or revoked if the tool no longer meets `[Organization]` requirements. Any suspension or revocation must be communicated to affected teams before or immediately upon the decision taking effect.
 
 ## 8. Security and Engineering Control Requirements
 
