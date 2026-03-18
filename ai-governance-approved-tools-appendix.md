@@ -10,6 +10,7 @@ This appendix supplements [`ai-engineering-policy-draft.md`](./ai-engineering-po
 
 - The AI Governance Function should update this appendix whenever an approval decision is issued, changed, suspended, or revoked.
 - This appendix should record approvals, approvals granted with restrictions, rejections, suspensions, and revocations.
+- The Decision date field should be recorded in `YYYY-MM-DD` format.
 - If a tool does not have a public source location, the Source location field should be marked as `N/A`.
 - Each restriction should be stated concretely so that users can determine whether a proposed use remains within the approved boundary.
 - Each record should define the approved scope of use, including applicable environments, data classes, connected systems, user groups, and workflow conditions where relevant.
@@ -19,6 +20,6 @@ This appendix supplements [`ai-engineering-policy-draft.md`](./ai-engineering-po
 
 The register should contain one row per tool, integration, plugin, skill, connector, or MCP server decision record, together with the specific restrictions and conditions that define its approved organizational use.
 
-| Tool name | Version | Source location | Tool description | Decision | Decision issued by | Restrictions | Rationale |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| `[Tool Name]` | `[Version or N/A]` | `[Repository URL or N/A]` | `[Short description of the tool and its engineering use case.]` | `[Approved / Approved with restrictions / Rejected / Suspended / Revoked]` | `[Name(s) of the person or persons who issued the decision.]` | `[Environment, data, access, or workflow restrictions.]` | `[Summary of the approval or decision basis.]` |
+| Tool name | Version | Source location | Tool description | Decision | Decision date | Decision issued by | Restrictions | Rationale |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| `[Tool Name]` | `[Version or N/A]` | `[Repository URL or N/A]` | `[Short description of the tool and its engineering use case.]` | `[Approved / Approved with restrictions / Rejected / Suspended / Revoked]` | `[YYYY-MM-DD]` | `[Name(s) of the person or persons who issued the decision.]` | `[Environment, data, access, or workflow restrictions.]` | `[Summary of the approval or decision basis.]` |

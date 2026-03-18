@@ -235,6 +235,7 @@ The AI Governance Function must maintain the official AI tool decision register.
 - Source location or `N/A` when no public source location is available.
 - Tool description.
 - Decision.
+- Decision date in the format `YYYY-MM-DD`.
 - Decision issued by.
 - Restrictions.
 - Rationale.
